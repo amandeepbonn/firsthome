@@ -10,13 +10,16 @@
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
+            background-color: #f5fcff;
+            color: #333;
         }
 
         .hero {
-            background: linear-gradient(135deg, #007bff, #6610f2);
+            background: linear-gradient(135deg, #00b4ff, #0084ff);
             color: white;
             padding: 80px 20px;
             text-align: center;
+            border-bottom-left-radius: 80px;
         }
 
         .hero img {
@@ -25,123 +28,129 @@
             margin-bottom: 20px;
         }
 
+        .btn-custom {
+            background-color: white;
+            color: #00b4ff;
+            border-radius: 25px;
+            padding: 10px 25px;
+            font-weight: 500;
+        }
+
+        .section-title {
+            font-weight: 600;
+            margin-bottom: 40px;
+            color: #0077cc;
+        }
+
         .tech-card {
-            transition: transform 0.3s ease;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 132, 255, 0.15);
+            transition: all 0.3s ease;
         }
 
         .tech-card:hover {
             transform: translateY(-5px);
         }
+
+        .tech-card .card-body {
+            padding: 30px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.1rem;
+            color: #0077cc;
+        }
+
+        footer {
+            background: #f0f9ff;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #e0f3ff;
+        }
     </style>
 </head>
 
 <body>
-
     <!-- Hero Section -->
-    <section class="hero" data-aos="zoom-in" data-aos-duration="1000">
+    <section class="hero" data-aos="fade-down">
         <img src="https://via.placeholder.com/180" alt="Aman Thind">
         <h1 class="display-5 fw-bold">Aman Thind</h1>
         <p class="lead">Full Stack Developer</p>
         <div class="mt-4">
-            <a href="mailto:amanthindson@gmail.com" class="btn btn-light me-3">📧 Email Me</a>
-            <a href="tel:8283838689" class="btn btn-outline-light">📞 Call Me</a>
+            <a href="mailto:amanthindson@gmail.com" class="btn btn-custom me-2">📧 Email</a>
+            <a href="tel:8283838689" class="btn btn-outline-light">📞 Call</a>
         </div>
     </section>
 
-    <!-- Technologies Section -->
+    <!-- Technologies -->
     <section class="container py-5">
-        <h2 class="text-center mb-4" data-aos="fade-up">Technologies I Work With</h2>
-        <div class="row g-4">
-            <!-- Loop through your technologies -->
-            <div class="col-md-3 col-sm-6" data-aos="fade-up">
-                <div class="card text-center tech-card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">HTML</h5>
-                    </div>
+        <h2 class="text-center section-title" data-aos="fade-up">Technologies I Work With</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in">
+                <div class="card tech-card">
+                    <div class="card-body">HTML</div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="50">
-                <div class="card text-center tech-card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">CSS</h5>
-                    </div>
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card tech-card">
+                    <div class="card-body">CSS</div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="card text-center tech-card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">jQuery</h5>
-                    </div>
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card tech-card">
+                    <div class="card-body">jQuery</div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="150">
-                <div class="card text-center tech-card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">JavaScript</h5>
-                    </div>
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+                <div class="card tech-card">
+                    <div class="card-body">JavaScript</div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="card text-center tech-card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">React</h5>
-                    </div>
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="400">
+                <div class="card tech-card">
+                    <div class="card-body">React</div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="250">
-                <div class="card text-center tech-card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">SAPUI5</h5>
-                    </div>
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="500">
+                <div class="card tech-card">
+                    <div class="card-body">SAPUI5</div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="card text-center tech-card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap</h5>
-                    </div>
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="600">
+                <div class="card tech-card">
+                    <div class="card-body">Bootstrap</div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="350">
-                <div class="card text-center tech-card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">PHP</h5>
-                    </div>
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="700">
+                <div class="card tech-card">
+                    <div class="card-body">PHP</div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="card text-center tech-card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">APIs</h5>
-                    </div>
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="800">
+                <div class="card tech-card">
+                    <div class="card-body">APIs</div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="450">
-                <div class="card text-center tech-card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Android</h5>
-                    </div>
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="900">
+                <div class="card tech-card">
+                    <div class="card-body">Android</div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="500">
-                <div class="card text-center tech-card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">Flutter</h5>
-                    </div>
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="1000">
+                <div class="card tech-card">
+                    <div class="card-body">Flutter</div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="550">
-                <div class="card text-center tech-card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="card-title">WordPress</h5>
-                    </div>
+            <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="1100">
+                <div class="card tech-card">
+                    <div class="card-body">WordPress</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-light text-center py-3" data-aos="fade-in">
+    <footer>
         <small>&copy; 2025 Aman Thind. All rights reserved.</small>
     </footer>
 
